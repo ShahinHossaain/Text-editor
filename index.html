@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <!-- link tailwind  -->
+      <script src="https://cdn.tailwindcss.com"></script>
+    <!-- icon link   -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="bg-blue-400 w-5/6 mx-auto mt-10 p-6" id="textBoldDiv">
+        <h1 class="text-center text-white text-2xl mb-5">My Text Editor</h1>
+        <div class="bg-blue-300">
+            <div class="grid grid-cols-3 mx-5 p-3" >
+                <div class="space-x-7" id="textStyle">
+                    <i class="bi bi-type-bold" id="bold"></i>
+                    <i class="bi bi-type-italic" id="italic"></i>
+                    <i class="bi bi-type-underline" id="underline"></i>
+                </div>
+                <div class="text-center space-x-7" id="textAlign">
+                    <i class="bi bi-text-left" id="left"></i>
+                    <i class="bi bi-text-center" id="center"></i>
+                    <i class="bi bi-text-right" id="right"></i>
+                    <i class="bi bi-justify" id="justify"></i>
+                </div>
+                <div class="text-right flex justify-between">
+                    <input type="number" class="w-11 pl-1" id="textSize" min="0" value="16">
+                    
+                    <select>
+                        <option value="capitalize">capitalize</option>
+                        <option value="uppercase">uppercase</option>
+                        <option value="lowercase">lowercase</option>
+                    </select>
+                    <!-- <button onclick="upper()">Upper</button>
+                    <button onclick="lower()">Lower</button>
+                    <button onclick="normal()">Normal</button> -->
+                    <input type="color" id="textColor">
+                </div>
+            </div>
+            <div class="m-1">
+                <textarea name="" id="textField" class="w-full p-5" >Mohammad Shahin Hossain</textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
